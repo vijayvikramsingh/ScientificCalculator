@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		19DEC735269E0D1000135B3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEC734269E0D1000135B3D /* AppDelegate.swift */; };
 		19DEC737269E0D1000135B3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEC736269E0D1000135B3D /* SceneDelegate.swift */; };
-		19DEC739269E0D1000135B3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEC738269E0D1000135B3D /* ViewController.swift */; };
+		19DEC739269E0D1000135B3D /* CalculatorUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEC738269E0D1000135B3D /* CalculatorUIViewController.swift */; };
 		19DEC73C269E0D1000135B3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DEC73A269E0D1000135B3D /* Main.storyboard */; };
 		19DEC73E269E0D1300135B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DEC73D269E0D1300135B3D /* Assets.xcassets */; };
 		19DEC741269E0D1300135B3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DEC73F269E0D1300135B3D /* LaunchScreen.storyboard */; };
+		19DEC749269E0DC400135B3D /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEC748269E0DC400135B3D /* CalculatorViewModel.swift */; };
+		19DEC7AB269EA02500135B3D /* ScientificCalculator in Frameworks */ = {isa = PBXBuildFile; productRef = 19DEC7AA269EA02500135B3D /* ScientificCalculator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19DEC731269E0D1000135B3D /* ScientificCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScientificCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DEC734269E0D1000135B3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DEC736269E0D1000135B3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19DEC738269E0D1000135B3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19DEC738269E0D1000135B3D /* CalculatorUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUIViewController.swift; sourceTree = "<group>"; };
 		19DEC73B269E0D1000135B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19DEC73D269E0D1300135B3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DEC740269E0D1300135B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DEC742269E0D1300135B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DEC748269E0DC400135B3D /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DEC7AB269EA02500135B3D /* ScientificCalculator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +62,8 @@
 			children = (
 				19DEC734269E0D1000135B3D /* AppDelegate.swift */,
 				19DEC736269E0D1000135B3D /* SceneDelegate.swift */,
-				19DEC738269E0D1000135B3D /* ViewController.swift */,
+				19DEC738269E0D1000135B3D /* CalculatorUIViewController.swift */,
+				19DEC748269E0DC400135B3D /* CalculatorViewModel.swift */,
 				19DEC73A269E0D1000135B3D /* Main.storyboard */,
 				19DEC73D269E0D1300135B3D /* Assets.xcassets */,
 				19DEC73F269E0D1300135B3D /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ScientificCalculator;
+			packageProductDependencies = (
+				19DEC7AA269EA02500135B3D /* ScientificCalculator */,
+			);
 			productName = ScientificCalculator;
 			productReference = 19DEC731269E0D1000135B3D /* ScientificCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 19DEC728269E0D0F00135B3D;
+			packageReferences = (
+				19DEC7A9269EA02500135B3D /* XCRemoteSwiftPackageReference "ScientificCalculatorFrameworks" */,
+			);
 			productRefGroup = 19DEC732269E0D1000135B3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19DEC739269E0D1000135B3D /* ViewController.swift in Sources */,
+				19DEC739269E0D1000135B3D /* CalculatorUIViewController.swift in Sources */,
 				19DEC735269E0D1000135B3D /* AppDelegate.swift in Sources */,
+				19DEC749269E0DC400135B3D /* CalculatorViewModel.swift in Sources */,
 				19DEC737269E0D1000135B3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScientificCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScientificCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19DEC7A9269EA02500135B3D /* XCRemoteSwiftPackageReference "ScientificCalculatorFrameworks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vijayvikramsingh/ScientificCalculatorFrameworks";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19DEC7AA269EA02500135B3D /* ScientificCalculator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19DEC7A9269EA02500135B3D /* XCRemoteSwiftPackageReference "ScientificCalculatorFrameworks" */;
+			productName = ScientificCalculator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19DEC729269E0D0F00135B3D /* Project object */;
 }

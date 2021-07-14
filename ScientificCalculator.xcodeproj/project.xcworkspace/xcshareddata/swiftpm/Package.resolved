@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ScientificCalculator",
+        "repositoryURL": "https://github.com/vijayvikramsingh/ScientificCalculatorFrameworks",
+        "state": {
+          "branch": null,
+          "revision": "b2817f7f90e452edf12c581e838b11bf5a397176",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
